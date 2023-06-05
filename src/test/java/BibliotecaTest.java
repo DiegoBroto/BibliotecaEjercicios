@@ -1,5 +1,6 @@
 import BibliotecaNacional.Biblioteca;
 import BibliotecaNacional.Libro;
+import BibliotecaNacional.Socio;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -110,4 +111,23 @@ public class BibliotecaTest {
 
     }
     //hasta aca llegue
+    //4.Incorporar un estudiante o socio a la biblioteca registrando un tipo y número de documento, nombre y apellido, y domicilio.
+
+    @Test
+    void agregarSocioTest () {
+        //arrange
+        Biblioteca biblioteca = new Biblioteca("Nacional");
+        Socio emilianoPerezAli = new Socio ("DNI", 34504576,"Emiliano","Perez Ali","Pueryrredon", 3350);
+        Socio diegoBroto = new Socio("DNI", 29508130, "Diego", "Broto", "Calle 66", 6517 );
+
+        //act
+        biblioteca.agregarSocio(emilianoPerezAli);
+        biblioteca.agregarSocio(diegoBroto);
+
+        //assert
+        assertEquals(2, biblioteca.getSocios().size());
+
+
+
+    }
 }
