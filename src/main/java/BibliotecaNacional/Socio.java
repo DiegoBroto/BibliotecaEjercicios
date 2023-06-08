@@ -9,7 +9,7 @@ public class Socio {
     private String nombreCalle;
     private Integer nroCalle;
 
-    public Socio (String tipoDoc, Integer nroDoc, String nombre, String apellido, String nombreCalle, Integer nroCalle) {
+    public Socio(String tipoDoc, Integer nroDoc, String nombre, String apellido, String nombreCalle, Integer nroCalle) {
         this.tipoDoc = tipoDoc;
         this.nroDoc = nroDoc;
         this.nombre = nombre;
@@ -18,5 +18,8 @@ public class Socio {
         this.nroCalle = nroCalle;
     }
 
+    public Integer getNroDoc() {
+        return nroDoc;
+    }
 
 }

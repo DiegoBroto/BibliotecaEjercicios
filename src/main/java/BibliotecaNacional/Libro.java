@@ -8,12 +8,13 @@ public class Libro {
     private String autor;
     private String categoria;
 
-    public Libro (String titulo, String codigoisbn, String autor, String categoria)
-    {this.titulo = titulo;
+    public Libro(String titulo, String codigoisbn, String autor, String categoria) {
+        this.titulo = titulo;
         this.codigoisbn = codigoisbn;
         this.autor = autor;
         this.categoria = categoria;
     }
+
     public String getCodigoisbn() {
         return codigoisbn;
     }
